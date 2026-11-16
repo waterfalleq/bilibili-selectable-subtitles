@@ -19,20 +19,16 @@ Supported pages:
 
 ## Install
 
-This project is distributed as an unpacked extension. It requires Node.js 20.19 or newer and a Chromium-based browser.
+Node.js is not required to install the extension.
 
-```bash
-npm install
-npm run build
-```
+1. Download the ZIP from the [latest release](https://github.com/waterfalleq/bilibili-selectable-subtitles/releases/latest).
+2. Extract it somewhere you intend to keep it.
+3. Open `chrome://extensions` in a Chromium-based browser.
+4. Enable **Developer mode**.
+5. Click **Load unpacked** and select the extracted `bilibili-selectable-subtitles` folder.
+6. Reload an open Bilibili video page.
 
-Then:
-
-1. Open `chrome://extensions`.
-2. Enable **Developer mode**.
-3. Click **Load unpacked**.
-4. Select the generated `dist` directory.
-5. Reload an open Bilibili video page.
+Chrome only permits one-click extension installation through the Chrome Web Store. The release ZIP is already built; loading its extracted folder does not require the source code or development tools.
 
 ## Use
 
@@ -47,6 +43,15 @@ The extension adds a small **OCR** button near the top-right of the video.
 Outside adjustment mode, subtitle text remains selectable and compatible with Shift-hover dictionary lookup.
 
 ## Development
+
+Building from source requires Node.js 20.19 or newer.
+
+```bash
+npm install
+npm run build
+```
+
+Load the generated `dist` directory from `chrome://extensions`.
 
 ```bash
 npm run typecheck
