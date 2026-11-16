@@ -1,0 +1,29 @@
+{
+  "name": "bilibili-selectable-subtitles",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "fetch:ocr-models": "node scripts/fetch-ocr-models.mjs",
+    "smoke:auto": "node scripts/automatic-ocr-smoke.mjs",
+    "smoke:overlay": "node scripts/overlay-ux-smoke.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "@tesseract.js-data/chi_sim": "^1.0.0",
+    "@types/chrome": "0.3.6",
+    "onnxruntime-web": "^1.26.0",
+    "playwright-core": "^1.64.1",
+    "ppu-paddle-ocr": "^5.8.3",
+    "tesseract.js": "^7.0.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.5",
+    "vitest": "5.0.5"
+  }
+}

@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+spike-results/
+*.log
+*.zip
+.DS_Store
+.idea/
+.vscode/
+.agents/
+.aws/
+.codex/
