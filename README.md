@@ -97,4 +97,4 @@ They write temporary evidence to the ignored `spike-results` directory.
 
 This is an independent project and is not affiliated with Bilibili.
 
-Third-party components and model licenses are listed in [`public/THIRD_PARTY_LICENSES.md`](public/THIRD_PARTY_LICENSES.md). No license has yet been chosen for the project's own source code.
+Project source code is available under the [MIT License](LICENSE). Third-party components and model licenses are listed separately in [`public/THIRD_PARTY_LICENSES.md`](public/THIRD_PARTY_LICENSES.md).

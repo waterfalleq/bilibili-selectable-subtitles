@@ -1,6 +1,8 @@
 {
   "name": "bilibili-selectable-subtitles",
   "version": "1.0.0",
+  "description": "Selectable Chinese OCR subtitles for Bilibili, processed locally with PP-OCRv5.",
+  "license": "MIT",
   "private": true,
   "type": "module",
   "engines": {
